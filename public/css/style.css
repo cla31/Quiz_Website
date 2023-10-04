@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .wrapper__row {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper__row {
+    padding: 10px;
+  }
+}
+.wrapper__text-center {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .wrapper__text-center {
+    flex-direction: column;
+  }
+}
+.wrapper__title.animate-character {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 90px;
+  display: inline-block;
+  background-image: linear-gradient(-225deg, #231557, #44107a, #ff1361, #fff800);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: textclip 2s linear infinite;
+}
+@media (max-width: 768px) {
+  .wrapper__title.animate-character {
+    font-size: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper__title.animate-character {
+    font-size: 40px;
+  }
+}
+.wrapper__button {
+  margin: 100px;
+  text-align: center;
+}
+.wrapper__button .start_btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  animation: anim-btn1 1s ease-in-out infinite alternate;
+}
+@media (max-width: 768px) {
+  .wrapper__button {
+    margin: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper__button {
+    margin: 20px;
+  }
+  .wrapper__button .start_btn {
+    padding: 10px 20px;
+  }
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes anim-btn1 {
+  from {
+    transform: scale(1);
+    background-color: #e0e05e;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 transparent, 0 0 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  to {
+    transform: scale(1.1);
+    background-color: #ff1361;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 12px #ff1361, 0 0 10px rgba(0, 0, 0, 0.5) inset;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
