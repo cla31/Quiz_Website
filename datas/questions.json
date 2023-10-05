@@ -1,0 +1,399 @@
+[{
+        "number": 1,
+        "question": "We 're going --------in december.",
+        "options": ["ski", "skiing", "to skiing", "to skying"],
+        "solution": 2
+    },
+    {
+        "number": 2,
+        "question": "I like to ------ a shower in the morning.",
+        "options": ["make", "do", "have", "be"],
+        "solution": 3
+    },
+    {
+        "number": 3,
+        "question": "An ------- describes a person or a thing",
+        "options": ["noun", "verb", "adverb", "adjective"],
+        "solution": 4
+    },
+    {
+        "number": 4,
+        "question": "Can you ------ a photo of us.",
+        "options": ["take", "make", "have", "do"],
+        "solution": 1
+    },
+    {
+        "number": 5,
+        "question": "Where do you -------- ? I'm from Chile.",
+        "options": ["come to", "come from", "come back from", "come to from"],
+        "solution": 2
+    },
+
+    {
+        "number": 6,
+        "question": "She came for dinner and ------- some lovely flowers for me.",
+        "options": ["bring", "taken", "brought", "took"],
+        "solution": 3
+    },
+    {
+        "number": 7,
+        "question": "He ---- at 9h30. He was late for work.",
+        "options": ["get up", "got over", "got", "got up"],
+        "solution": 4
+    },
+    {
+        "number": 8,
+        "question": "He ------ me the way to the station.",
+        "options": ["asked", "said", "told", "spoke"],
+        "solution": 1
+    },
+    {
+        "number": 9,
+        "question": "We arrived ----------- Rome early.",
+        "options": ["at", "to", "in", "on"],
+        "solution": 3
+    },
+    {
+        "number": 10,
+        "question": "I'm studying to be a doctor, ------. I want to help people.",
+        "options": ["althought", "but", "even", "because"],
+        "solution": 4
+    },
+    {
+        "number": 11,
+        "question": "Jo is on holidays------.",
+        "options": ["in a moment", "at the moment", "for a moment"],
+        "solution": 2
+    },
+    {
+        "number": 12,
+        "question": "There are 60 ------ In a minute.",
+        "options": ["seconds", "months", "years", "hours"],
+        "solution": 1
+    },
+    {
+        "number": 13,
+        "question": "She is a good teacher. She teaches --- .",
+        "options": ["badly", "good", "well", "OK"],
+        "solution": 3
+    },
+    {
+        "number": 14,
+        "question": "I ------- a letter to my friend in Zimbabwe, last night.",
+        "options": ["write", "written", "wrote", "writted"],
+        "solution": 3
+    },
+    {
+        "number": 15,
+        "question": "The furniture in that shop ---- very expensive.",
+        "options": ["is", "are", "does", "do"],
+        "solution": 1
+    },
+    {
+        "number": 16,
+        "question": "The weather is worse than ever. It's ----.",
+        "options": ["awful", "terrible", "lovely", "wonderful"],
+        "solution": 1
+    },
+    {
+        "number": 17,
+        "question": "Our teacher is very relaxed and ------.",
+        "options": ["selfish", "well behaved", "stupid", "easy going"],
+        "solution": 4
+    },
+    {
+        "number": 18,
+        "question": "I'm really looking ------ sitting on the beach for a week.",
+        "options": ["to", "after", "forward to", "at"],
+        "solution": 3
+    },
+    {
+        "number": 19,
+        "question": "-------- is the opposite of comfortable.",
+        "options": ["non comfortable", "Uncomfortable", "discomfortable", "Uncomfortablous"],
+        "solution": 2
+    },
+    {
+        "number": 20,
+        "question": "Can I -------- your camera for a weekend.",
+        "options": ["lend you", "borrow you", "lend", "borrow"],
+        "solution": 4
+    },
+    {
+        "number": 21,
+        "question": "Your uncle's son is your----.",
+        "options": ["aunt", "niece", "cousin", "nephew"],
+        "solution": 3
+    },
+    {
+        "number": 22,
+        "question": "I need to lose some weight. The doctor said I'm -----.",
+        "options": ["overweight", "slim", "thin", "Cow"],
+        "solution": 1
+    },
+    {
+        "number": 23,
+        "question": "a : ----------, b: fine thanks.",
+        "options": ["Hi", "Good luck", "How are you ?", "Excuse me"],
+        "solution": 3
+    },
+    {
+        "number": 24,
+        "question": "Excuse me ------do I get to the library ?",
+        "options": ["Where", "How", "can", "Could"],
+        "solution": 2
+    },
+
+    {
+        "number": 25,
+        "question": "The flights and hotel are included on a ----- holiday.",
+        "options": ["camping", "package", "walking", "Pic nic"],
+        "solution": 2
+    },
+    {
+        "number": 26,
+        "question": "Have you got any --------? I've only got a 10$ note.",
+        "options": ["tills", "bags", "change", "stuff"],
+        "solution": 3
+    },
+    {
+        "number": 27,
+        "question": "Fill in this ------- to make a reservation.",
+        "options": ["Cheque", "form", "lift", "lift form"],
+        "solution": 2
+    },
+    {
+        "number": 28,
+        "question": "In a ---, you take what you want, pay for it first and take it to your table.",
+        "options": ["pub", "sandwich bar", "self service restaurant", "bar"],
+        "solution": 3
+    },
+    {
+        "number": 29,
+        "question": "Did you see that Science Fiction film, --------- last night.",
+        "options": ["at the TV", "on TV", "on the TV", "in the TV"],
+        "solution": 2
+    },
+    {
+        "number": 30,
+        "question": "She talks to her brother------- every week.",
+        "options": ["on phone", "at the phone", "on the phone", "in the phone"],
+        "solution": 3
+    },
+    {
+        "number": 31,
+        "question": "The Police ------- the boy for shoplifting.",
+        "options": ["arrested", "broke into", "robbed", "mugged"],
+        "solution": 1
+    },
+    {
+        "number": 32,
+        "question": "You need a satellite dish outside your house to get satellite -----.",
+        "options": ["the news", "channels", "journalists", "magazines"],
+        "solution": 2
+    },
+    {
+        "number": 33,
+        "question": "My computer -------  and I couldn't work.",
+        "options": ["crashed", "was mended", "was out of order", "in a bad mood"],
+        "solution": 1
+    },
+    {
+        "number": 34,
+        "question": "There was a traffic jam in the city center because of a -----.",
+        "options": ["hurricane", "rush hour", "car crash", "Nude women"],
+        "solution": 3
+    },
+    {
+        "number": 35,
+        "question": "a : What colour ------- ? b : It's red.",
+        "options": ["your car is", "is your car", "are your car", "do you car"],
+        "solution": 2
+    },
+    {
+        "number": 36,
+        "question": "I  ------ to work by car, but sometimes I walk.",
+        "options": ["go usually", "usually go", "'m usually going", "go use"],
+        "solution": 2
+    },
+    {
+        "number": 37,
+        "question": "------ under the table ?",
+        "options": ["What do you do", "do you", "you do", "are you doing"],
+        "solution": 4
+    },
+    {
+        "number": 38,
+        "question": "What kind of car ---------- ?",
+        "options": ["she has", "does she got", "does she has", "has she got"],
+        "solution": 4
+    },
+    {
+        "number": 39,
+        "question": "I usually get up early, but this morning I ------- at 9.30.",
+        "options": ["getted up", "get up", "got up", "give up"],
+        "solution": 3
+    },
+    {
+        "number": 40,
+        "question": "We went to the cinema, but we --- the film.",
+        "options": ["didn't enjoy", "don't enjoy", "didn't envoyed", "have not enjoyed"],
+        "solution": 1
+    },
+    {
+        "number": 41,
+        "question": "------ the television, when I phone you ?",
+        "options": ["Did you watch", "Were you watching", "Were you watch", "Do you watch"],
+        "solution": 2
+    },
+    {
+        "number": 42,
+        "question": "My mother ---- by air.",
+        "options": ["never has travelled", "has never travel", "has never travelled", "is never travelled"],
+        "solution": 3
+    },
+    {
+        "number": 42,
+        "question": "My mother ---- by air.",
+        "options": ["never has travelled", "has never travel", "has never travelled", "is never travelled"],
+        "solution": 3
+    },
+    {
+        "number": 43,
+        "question": "a : Do you know Sarah ?  b : Yes, ------- a long time.",
+        "options": ["I'm knowing her for", "I know her since", "I've known her for", "I've known her since"],
+        "solution": 3
+    },
+    {
+        "number": 44,
+        "question": "These houses-------- 100 years ago.",
+        "options": ["were buiding", "were built", "are built", "are being built"],
+        "solution": 2
+    },
+    {
+        "number": 45,
+        "question": "I used to play tennis. These days I ------- golf.",
+        "options": ["play", "used to play", "played", "playing"],
+        "solution": 1
+    },
+    {
+        "number": 46,
+        "question": "I -------- at home this evening.",
+        "options": ["'m going to stay", "stay", "m'stay", "'m stayed"],
+        "solution": 1
+    },
+    {
+        "number": 47,
+        "question": "a : My bag is very heavy b: I -------. It for you.",
+        "options": ["'m carrying", "'ll carry", "carry", "care"],
+        "solution": 2
+    },
+    {
+        "number": 48,
+        "question": "When I was young, I -------- very fast.",
+        "options": ["can run", "could run", "could to run", "might run"],
+        "solution": 2
+    },
+    {
+        "number": 49,
+        "question": "I ------ walk home last night. There were no buses.",
+        "options": ["needn't", "must", "had to", "should"],
+        "solution": 3
+    },
+    {
+        "number": 50,
+        "question": "------ to the cinema ?",
+        "options": ["Would you like going", "Would you like to go", "Do you like go", "Do you like"],
+        "solution": 2
+    },
+    {
+        "number": 51,
+        "question": "I don't like weather, but Kate.",
+        "options": ["does", "doesn't like", "likes", "doesn't"],
+        "solution": 1
+    },
+    {
+        "number": 52,
+        "question": "a : I was late for work today b : Jonh was.",
+        "options": ["too", "So John was", "So wasn't John", "So John"],
+        "solution": 1
+    },
+    {
+        "number": 53,
+        "question": "Do you know how ------------?",
+        "options": ["do aeroplanes fly", "fly aeroplanes", "aeroplanes fly", "The fly aeroplanes"],
+        "solution": 3
+    },
+    {
+        "number": 54,
+        "question": "He's very funny, He makes -------.",
+        "options": ["me laught", "me laughing", "me to laught", "me too laught"],
+        "solution": 1
+    },
+    {
+        "number": 55,
+        "question": "I went to the shop ------- a newspaper.",
+        "options": ["for buy", "to buy", "buying", "buy"],
+        "solution": 2
+    },
+    {
+        "number": 56,
+        "question": "The sea looks nice. Let's go ---------.",
+        "options": ["on a swim", "to a swim", "swimming", "swim"],
+        "solution": 3
+    },
+    {
+        "number": 57,
+        "question": "Have the children ---- their homework.",
+        "options": ["made", "making", "doing", "done"],
+        "solution": 4
+    },
+    {
+        "number": 58,
+        "question": "I went out to meet a friend of ---.",
+        "options": ["me", "I", "my", "mine"],
+        "solution": 4
+    },
+    {
+        "number": 59,
+        "question": "I need ------- about a hotel in London.",
+        "options": ["an information", "informations", "information", "the information"],
+        "solution": 3
+    },
+    {
+        "number": 60,
+        "question": "The house is empty --------- lives there.",
+        "options": ["Somebody", "Nobody", "Anybody", "Anyone"],
+        "solution": 2
+    },
+    {
+        "number": 61,
+        "question": "------- needs friends.",
+        "options": ["Every", "All", "Everybody", "Everything"],
+        "solution": 3
+    },
+    {
+        "number": 62,
+        "question": "There was ----- in the fridge. It was nearly empty.",
+        "options": ["few", "little", "much", "a lot"],
+        "solution": 2
+    },
+    {
+        "number": 63,
+        "question": "You speak ---- English.",
+        "options": ["very well", "very well English", "English very good", "goog english very"],
+        "solution": 1
+    },
+    {
+        "number": 64,
+        "question": "Is there -------- sugar in your coffee ?",
+        "options": ["enough sugar", "sugar enough", "too sugar", "always"],
+        "solution": 1
+    },
+    {
+        "number": 65,
+        "question": "Rome is old, but Athens is ------.",
+        "options": ["more old", "older than", "the oldest", "older"],
+        "solution": 4
+    }
+]

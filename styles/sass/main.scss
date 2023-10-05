@@ -71,6 +71,9 @@
         &__button {
             margin: 100px;
             text-align: center;
+            a {
+                cursor: pointer;
+            }
             .start_btn {
                 position: relative;
                 display: inline-block;

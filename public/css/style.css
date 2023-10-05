@@ -63,6 +63,9 @@ body {
   margin: 100px;
   text-align: center;
 }
+.wrapper__button a {
+  cursor: pointer;
+}
 .wrapper__button .start_btn {
   position: relative;
   display: inline-block;
