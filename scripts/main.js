@@ -10,6 +10,8 @@ const main = async (pathJson) => {
         console.log("Questions objets",questions);
         const solution = questions[0].getSolution();
         console.log("1ère solution",solution);
+        displayModal()
+        quiz()
   
     } catch (erreur) {
         console.log(erreur);
