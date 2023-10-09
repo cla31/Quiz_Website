@@ -11,7 +11,7 @@ const main = async (pathJson) => {
         const solution = questions[0].getSolution();
         console.log("1ère solution",solution);
         displayModal()
-        quiz()
+        quiz(questions)
   
     } catch (erreur) {
         console.log(erreur);

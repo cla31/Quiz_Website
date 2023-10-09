@@ -1,7 +1,7 @@
 const displayModal = () => {
     const modal = document.getElementById("modal");
     modal.innerHTML = `
-    <!-- <div class="info-box info-box--active"> -->
+    <!-- <div class="info-box"> -->
     <div class="info-box"> 
         <div class="info-box__title"><span>Some Rules of this Quiz</span></div>
         <div class="info-box__list">
@@ -17,7 +17,7 @@ const displayModal = () => {
         </div>
     </div>
 
-    <!-- <div class="quiz-box quiz-box--active"> -->
+    <!-- <div class="quiz-box"> -->
     <div class="quiz-box">
         <header class="quiz-box__header">
             <div class="quiz-box__title">Awesome Quiz Application</div>
@@ -27,12 +27,12 @@ const displayModal = () => {
             </div>
         </header>
         <section class="quiz-box__section">
-            <div class="quiz-box__question-text">Quest</div>
+            <div class="quiz-box__question-text">
+                <!-- question from JavaScript -->
+            </div>
             <div class="quiz-box__option-list">
                 <div id="option_list" class="quiz-box__option">
-                    <div class="quiz-box__option-item"><span>Option 1</span></div>
-                    <div class="quiz-box__option-item"><span>Option 2</span></div>
-                    <div class="quiz-box__option-item"><span>Option 3</span></div>
+                    <!-- options from JavaScript -->
                 </div>
             </div>
         </section>
