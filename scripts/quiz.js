@@ -1,5 +1,3 @@
-
-
 const quiz = (questions) => {
     const infoBox = document.querySelector(".info-box");
     const continueBtn = infoBox.querySelector(".info-box__buttons .info-box__button--restart");
@@ -9,14 +7,12 @@ const quiz = (questions) => {
     const nextBtn = document.querySelector("footer .quiz-box__next-button");
     const resultBox = document.querySelector(".result-box");
     const progressBar = document.querySelector(".quiz-box__progress");
-
     let queCount = 0;
-
-    let questionsDisplayed = 0;
-    
+    let questionsDisplayed = 0;    
     let timerDuration = 5;
     let timerId;
     const timerElement = document.querySelector(".quiz-box__timer-sec");
+    let timeLeftInTimer;
 
 
     infoBox.classList.add("info-box--active");
@@ -32,7 +28,7 @@ const quiz = (questions) => {
     const startQuiz = () => {
         hideInfoBox();
         quizBox.classList.add("quiz-box--active");
-        startTimer();
+        startTimer(timerDuration);
 
     }
      // Quit quizz button
@@ -51,7 +47,7 @@ const quiz = (questions) => {
             progressBar.style.width = "0%";
             questions[queCount].userHasSelected = false;
             questions[queCount].display();
-            startTimer();
+            startTimer(timerDuration);
         }
 
      //  nextQuestion(), handleTimeout()
@@ -72,7 +68,7 @@ const quiz = (questions) => {
     
             if (queCount < 10) {
                 questions[queCount].display();
-                startTimer();
+                startTimer(timerDuration);
             } else {
                 showResultBox();
             }
@@ -80,7 +76,7 @@ const quiz = (questions) => {
             updateProgressBar();
         } else {
             alert("Vous devez sélectionner une réponse avant de passer à la question suivante.");
-            startTimer();
+            startTimer(timeLeftInTimer);
         }
     
         questions[queCount].userHasSelected = false;
@@ -89,32 +85,40 @@ const quiz = (questions) => {
    
     
      // StartQuiz(), NextQuestion, restartQuiz()
-     const startTimer = () => {
+     const startTimer = (timerDuration) => {
         let timeLeft = timerDuration;
-        
+        //Intervalle
         timerId = setInterval(() => {
+           //Si le temps est écoulé
             if (timeLeft <= -1) {
+                 //Arrêt de l'intervalle
                 clearInterval(timerId);
                 timerElement.textContent = "0 s";
                 handleTimeout();
+            // Sinon décrémentation et affichage de la décrémentation
             } else {
                 timerElement.textContent = `${timeLeft} s`;
+                //Le temps restant est ici
                 timeLeft--;
+                timeLeftInTimer=timeLeft;
             }
         }, 1000);
     }
-    // StartTimer()
+    // Lorsque le temps s'est écoulé pour une question donnée.
     const handleTimeout = () => {
+        //Si l'utilisateur n'a pas séléctionné de réponse 
         if (!questions[queCount].userHasSelected) {
             questionsDisplayed++;
             alert("Temps écoulé, pas de points.");
+            //On passe à la question suivante
             queCount++;
             updateProgressBar();
         }
-
+        //S'il y a encore des questions à afficher, elle affiche la question suivante
         if (queCount < 10) {
             questions[queCount].display();
-            startTimer();
+            //démarre une nouvelle minuterie.
+            startTimer(timerDuration);
         } else {
             showResultBox();
         }
