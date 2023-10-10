@@ -23,7 +23,7 @@ const displayModal = () => {
             <div class="quiz-box__title">Awesome Quiz Application</div>
             <div class="quiz-box__timer">
                 <div class="quiz-box__time-left-text">Time Left</div>
-                <div class="quiz-box__timer-sec">10</div>
+                <div class="quiz-box__timer-sec"> </div>
             </div>
         </header>
         <section class="quiz-box__section">
@@ -45,7 +45,7 @@ const displayModal = () => {
         </footer>
     </div>
 
-    <!-- <div class="result-box result-box--active"> -->
+    <!-- <div class="result-box "> -->
     <div class="result-box">
         <div class="result-box__icon">
             <i class="fas fa-crown"></i>
