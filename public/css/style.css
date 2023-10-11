@@ -13,8 +13,8 @@ body {
 
 .wrapper__row {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   height: 100vh;
 }
@@ -119,21 +119,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid blue;
 }
 
 .info-box {
-  border: 2px solid blue;
-  position: absolute;
   top: 25%;
   left: 30%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 540px;
+  position: absolute;
   border: 5px solid #FF71F9;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
   background: rgba(241, 241, 241, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .info-box--active {
   opacity: 1;
@@ -211,15 +209,15 @@ body {
 }
 
 .quiz-box {
-  position: absolute;
   top: 20%;
   left: 20%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
   border: 5px solid #FF71F9;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
-  background-color: rgba(241, 241, 241, 0.9);
+  background: rgba(241, 241, 241, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   min-width: 800px;
 }
 .quiz-box--active {
@@ -353,15 +351,15 @@ body {
   padding: 0 10px;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   cursor: pointer;
   border: none;
   outline: none;
-  color: #fff;
   border-radius: 5px;
-  background: #1baeff;
   border: 1px solid #1baeff;
+  color: #fff;
+  background: #1baeff;
   line-height: 10px;
 }
 .quiz-box__next-button:hover {
@@ -425,22 +423,22 @@ body {
 }
 
 .result-box {
-  position: absolute;
   top: 50%;
   left: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: #fff;
-  border-radius: 5px;
-  display: flex;
   padding: 25px 30px;
   width: 450px;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   transform: translate(-50%, -50%) scale(0.9);
+  position: absolute;
+  border: 5px solid #FF71F9;
+  border-radius: 5px;
   opacity: 0;
   pointer-events: none;
-  border: 5px solid #FF71F9;
+  background: rgba(241, 241, 241, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .result-box--active {
   opacity: 1;
@@ -461,11 +459,11 @@ body {
   margin: 20px 0;
 }
 .result-box__buttons button {
+  font-weight: 500;
   margin: 0 10px;
   height: 45px;
   padding: 0 20px;
   font-size: 18px;
-  font-weight: 500;
   cursor: pointer;
   border: none;
   outline: none;
