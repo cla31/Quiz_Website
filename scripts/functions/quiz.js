@@ -1,19 +1,11 @@
-const quiz = (questions) => {
-    const infoBox = document.querySelector(".info-box");
-    const continueBtn = infoBox.querySelector(".info-box__buttons .info-box__button--restart");
-    const exitBtn = infoBox.querySelector(".info-box__buttons .info-box__button--quit");
-    const quizBox = document.querySelector(".quiz-box");
-    
-    const nextBtn = document.querySelector("footer .quiz-box__next-button");
-    const resultBox = document.querySelector(".result-box");
-    const progressBar = document.querySelector(".quiz-box__progress");
+
+const quiz = (questions, infoBox, continueBtn, exitBtn, quizBox, nextBtn, resultBox, progressBar, timerElement ) => {
+   
     let queCount = 0;
     let questionsDisplayed = 0;    
     let timerDuration = 5;
-    let timerId;
-    const timerElement = document.querySelector(".quiz-box__timer-sec");
+    let timerId;  
     let timeLeftInTimer;
-
 
     infoBox.classList.add("info-box--active");
     document.getElementById('modal').style.display = 'block';
