@@ -16,10 +16,13 @@ const quiz = (questions) => {
 
 
     infoBox.classList.add("info-box--active");
-
-
+    document.getElementById('modal').style.display = 'block';
 
     //Exit button
+    const exitQuiz = () => {
+        document.getElementById('modal').style.display = 'none';
+    }
+    //Hide info
     const hideInfoBox = () => {
         infoBox.classList.remove("info-box--active");
     }
@@ -145,7 +148,7 @@ const quiz = (questions) => {
     }
 
         // Gestion des événements
-    exitBtn.addEventListener('click', () => hideInfoBox());
+    exitBtn.addEventListener('click', () => exitQuiz());
     continueBtn.addEventListener('click', () => startQuiz());
 
     nextBtn.addEventListener('click', () => nextQuestion());
