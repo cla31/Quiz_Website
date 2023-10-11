@@ -1,0 +1,24 @@
+@use'variables'as *;
+@mixin box-properties {
+    position: absolute;
+    border: 5px solid #FF71F9;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(241, 241, 241, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin button-properties {
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid $blue-quiz-box;
+}
