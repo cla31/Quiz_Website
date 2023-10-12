@@ -9,4 +9,4 @@ To view the page online click  :point_right: [here](https://cla31.github.io/Quiz
 **Application Diagram:**
 <br/>
 <br/>
-![DESKTOP-VERSION](./quiz-app-diagram.png)
+![DESKTOP-VERSION](./app-diagram.png)
