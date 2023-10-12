@@ -1,6 +1,14 @@
 
-const quiz = (questions, infoBox, continueBtn, exitBtn, quizBox, nextBtn, resultBox, progressBar, timerElement ) => {
-   
+const quiz = (questions, elements ) => {
+    const infoBox = elements.infoBox;
+    const continueBtn = elements.continueBtn;
+    const exitBtn = elements.exitBtn;
+    const quizBox = elements.quizBox;
+    const nextBtn = elements.nextBtn;
+    const resultBox = elements.resultBox;
+    const progressBar = elements.progressBar;
+    const timerElement = elements.timerElement;
+
     let queCount = 0;
     let questionsDisplayed = 0;    
     let timerDuration = 5;
