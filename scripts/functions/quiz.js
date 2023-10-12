@@ -1,5 +1,4 @@
 
-
 const quiz = (questions ) => {
     initializeDomElements()
     initializeVariables();
@@ -137,7 +136,7 @@ const quiz = (questions ) => {
 
  
     const listeners = createListeners(exitQuiz, startQuiz, nextQuestion, restartQuiz, quitQuiz);
-    
+
     // Appel fonction registerListeners pour ajouter tous les écouteurs d'événements :
     registerListeners(listeners);
 
