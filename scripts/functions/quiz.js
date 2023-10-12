@@ -1,19 +1,9 @@
 
-const quiz = (questions, elements ) => {
-    const infoBox = elements.infoBox;
-    const continueBtn = elements.continueBtn;
-    const exitBtn = elements.exitBtn;
-    const quizBox = elements.quizBox;
-    const nextBtn = elements.nextBtn;
-    const resultBox = elements.resultBox;
-    const progressBar = elements.progressBar;
-    const timerElement = elements.timerElement;
 
-    let queCount = 0;
-    let questionsDisplayed = 0;    
-    let timerDuration = 5;
-    let timerId;  
-    let timeLeftInTimer;
+const quiz = (questions ) => {
+    initializeDomElements()
+    initializeVariables();
+
 
     infoBox.classList.add("info-box--active");
     document.getElementById('modal').style.display = 'block';
@@ -83,9 +73,7 @@ const quiz = (questions, elements ) => {
         }
     
         questions[queCount].userHasSelected = false;
-    };
-
-   
+    };   
     
      // StartQuiz(), NextQuestion, restartQuiz()
      const startTimer = (timerDuration) => {
@@ -133,7 +121,7 @@ const quiz = (questions, elements ) => {
         infoBox.classList.remove("info-box--active");
         quizBox.classList.remove("quiz-box--active");
         resultBox.classList.add("result-box--active");
-        const scoreText = resultBox.querySelector(".result-box__score-text");
+        // const scoreText = resultBox.querySelector(".result-box__score-text");
         let scoreMessage = '';
 
         if (totalScore > 3) {
@@ -147,15 +135,13 @@ const quiz = (questions, elements ) => {
         scoreText.innerHTML = `<span>${scoreMessage}</span>`;
     }
 
-        // Gestion des événements
-    exitBtn.addEventListener('click', () => exitQuiz());
-    continueBtn.addEventListener('click', () => startQuiz());
+ 
+    const listeners = createListeners(exitQuiz, startQuiz, nextQuestion, restartQuiz, quitQuiz);
+    
+    // Appel fonction registerListeners pour ajouter tous les écouteurs d'événements :
+    registerListeners(listeners);
 
-    nextBtn.addEventListener('click', () => nextQuestion());
-    resultBox.querySelector(".result-box__buttons .result-box__button--restart").addEventListener('click', () => restartQuiz());
-    resultBox.querySelector(".result-box__button--quit").addEventListener('click', () => quitQuiz());
-
-       // Initialisation
+    // Initialisation
     shuffleArray(questions);
     questions[queCount].display();
-};
+    };
