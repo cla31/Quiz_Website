@@ -5,7 +5,7 @@ const displayModal = () => {
     <div class="info-box"> 
         <div class="info-box__title"><span>Some Rules of this Quiz</span></div>
         <div class="info-box__list">
-            <div class="info-box__item">1. You will have only <span>5 seconds</span> per each question.</div>
+            <div class="info-box__item">1. You will have only <span>10 seconds</span> per each question.</div>
             <div class="info-box__item">2. Once you select your answer, it can't be undone.</div>
             <div class="info-box__item">3. You can't select any option once time goes off.</div>
             <div class="info-box__item">4. You can't exit from the Quiz while you're playing.</div>
