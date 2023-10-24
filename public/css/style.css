@@ -112,6 +112,39 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  #canvas {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 480px) {
+  #canvas {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.well-done {
+  font-size: 28px;
+}
+@media (max-width: 480px) {
+  .well-done {
+    font-size: 20px;
+  }
+}
+
+.ten-out-of-ten {
+  font-size: 28px;
+}
+@media (max-width: 480px) {
+  .ten-out-of-ten {
+    font-size: 20px;
+  }
+}
+
 .modal {
   display: none;
   position: fixed;

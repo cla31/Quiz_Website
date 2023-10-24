@@ -1,4 +1,33 @@
 @use'../utils/index' as *;
+#canvas {
+    // border: 2px solid blue;
+    @media (max-width: 768px) {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.well-done {
+    font-size: 28px;
+    @media (max-width: 480px) {
+        font-size: 20px;
+    }
+}
+
+.ten-out-of-ten {
+    font-size: 28px;
+    @media (max-width: 480px) {
+        font-size: 20px;
+        // border: 2px solid blue;
+    }
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -6,7 +35,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // border: 2px solid blue;
+    // border: 5px solid orange;
 }
 
 .info-box {

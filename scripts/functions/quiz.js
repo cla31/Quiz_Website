@@ -28,7 +28,7 @@ const quiz = (questions ) => {
         window.location.reload();
     }
 
-        //Replay button
+    //Replay button
     const restartQuiz = () => {
             quizBox.classList.add("quiz-box--active");
             resultBox.classList.remove("result-box--active");
@@ -123,13 +123,15 @@ const quiz = (questions ) => {
         // const scoreText = resultBox.querySelector(".result-box__score-text");
         let scoreMessage = '';
 
-        if (totalScore > 3) {
+        if (totalScore > 5) {
             scoreMessage = `Congrats!, You got ${totalScore} out of 10`;
         } else if (totalScore > 1) {
             scoreMessage = `and nice 😎, You got ${totalScore} out of 10`;
         } else {
             scoreMessage = `and sorry 😐, You got only ${totalScore} out of 10`;
+            // startFireworks();     
         }
+        //rajouter un aure else avec si t'as 10/10 => appel de fireworks, donc mettre un elseif à "and sorry..."
 
         scoreText.innerHTML = `<span>${scoreMessage}</span>`;
     }
