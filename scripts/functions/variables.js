@@ -1,7 +1,7 @@
 const initializeVariables = () => {
     queCount = 0;
     questionsDisplayed = 0;
-    timerDuration = 5;
+    timerDuration = 10;
     timerId = undefined;
     timeLeftInTimer = undefined;
     totalScore = 0;  
