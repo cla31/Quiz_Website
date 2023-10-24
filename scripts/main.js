@@ -6,7 +6,7 @@ const main = async (pathJson) => {
         const questions = fetchQuestions.map(data => {
             return new Question(data.number, data.question, data.options, data.solution);
             });
-        startFireworks();               
+        // startFireworks();               
         quiz(questions)
     
 
