@@ -1,11 +1,11 @@
-//Cette fonction créée une balise canvas dans la modale existante
-//du template html généré par displayModal()
+// Cette fonction créée une balise canvas dans la modale existante
+// du template html généré par displayModal()
 // Pour re utiliser cette fonction il faut juste l'intégrer (le message et le feu d'artifice)
 // à un élément de notre html:
 // Dans notre cas, on ajoute le fireworks à cette ligne de code dans notre modal.
 // modal.appendChild(createCanvas);
 // on intègre aussi le message à notre feu d'artifice et ça se passe également dans la modal
-//au niveau de cette ligne de code:
+// au niveau de cette ligne de code:
 // modal.appendChild(messageElement);
 
 

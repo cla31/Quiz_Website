@@ -10,6 +10,7 @@ class Question {
     }
 
      display() {
+        // console.log("number de la question ds la classe",this.number);
         const que_text = document.querySelector(".quiz-box__question-text");
         que_text.innerHTML = `<span>${this.number}. ${this.question}</span>`;
         // console.log("this option list",this.option_list)
@@ -47,9 +48,9 @@ class Question {
             this.userScore = 1; 
             selectedOptionElement.classList.add("quiz-box__option-item--correct"); 
             selectedOptionElement.insertAdjacentHTML("beforeend", tickIconTag); 
-            console.log("Your score is = " + this.userScore);
+            // console.log("Your score is = " + this.userScore);
             totalScore += this.userScore;
-            console.log("Your total score is = " + totalScore); 
+            // console.log("Your total score is = " + totalScore); 
 
         }else{
             selectedOptionElement.classList.add("quiz-box__option-item--incorrect"); 

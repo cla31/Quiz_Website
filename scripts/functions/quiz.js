@@ -33,12 +33,12 @@ const quiz = (questions ) => {
             quizBox.classList.add("quiz-box--active");
             resultBox.classList.remove("result-box--active");
             shuffleArray(questions);
-            queCount = 0;
+            questionCount = 0;
             totalScore = 0;
             questionsDisplayed = 0;
             progressBar.style.width = "0%";
-            questions[queCount].userHasSelected = false;
-            questions[queCount].display();
+            questions[questionCount].userHasSelected = false;
+            questions[questionCount].display();
             startTimer(timerDuration);
         }
 
@@ -50,28 +50,35 @@ const quiz = (questions ) => {
     
     //Next button
     const nextQuestion = () => {
+        // console.log("Next Questions questionCount",questionCount);
+        // console.log("Next Question questionDisplayed",questionsDisplayed);
+        // console.log("question number",questions[questionCount].number);
         if (timerId) {
             clearInterval(timerId);
         }
     
-        if (questions[queCount].userHasSelected) {
-            queCount++;
+        if (questions[questionCount].userHasSelected) {
+            questionCount++;
             questionsDisplayed++;
-    
-            if (queCount < 10) {
-                questions[queCount].display();
+            console.log("Next Questions questionCount",questionCount);
+            console.log("Next Question questionDisplayed",questionsDisplayed);
+
+
+            if (questionCount < 10) {
+                questions[questionCount].display();
                 startTimer(timerDuration);
             } else {
                 showResultBox();
-            }
-    
+            }    
             updateProgressBar();
         } else {
+            // console.log("If de Next Questions questionCount",questionCount);
+            // console.log("If de Next Question questionDisplayed",questionsDisplayed);
             alert("Vous devez sélectionner une réponse avant de passer à la question suivante.");
             startTimer(timeLeftInTimer);
         }
     
-        questions[queCount].userHasSelected = false;
+        questions[questionCount].userHasSelected = false;
     };   
     
      // StartQuiz(), NextQuestion, restartQuiz()
@@ -96,17 +103,16 @@ const quiz = (questions ) => {
     }
     // Lorsque le temps s'est écoulé pour une question donnée.
     const handleTimeout = () => {
-        //Si l'utilisateur n'a pas séléctionné de réponse 
-        if (!questions[queCount].userHasSelected) {
-            questionsDisplayed++;
-            alert("Temps écoulé, pas de points.");
-            //On passe à la question suivante
-            queCount++;
-            updateProgressBar();
-        }
+        //Si l'utilisateur n'a pas séléctionné de réponse et
         //S'il y a encore des questions à afficher, elle affiche la question suivante
-        if (queCount < 10) {
-            questions[queCount].display();
+        if ((!questions[questionCount].userHasSelected)&&(questionCount < 10)) {
+            alert("Temps écoulé, pas de points.");
+            questionCount++;
+            questionsDisplayed++;
+            updateProgressBar();
+            questions[questionCount].display();
+            console.log("If handleTimeout questionCount",questionCount);
+            console.log("If handleTimeout questionDisplayed",questionsDisplayed);
             //démarre une nouvelle minuterie.
             startTimer(timerDuration);
         } else {
@@ -149,5 +155,5 @@ const quiz = (questions ) => {
 
     // Initialisation
     shuffleArray(questions);
-    questions[queCount].display();
+    questions[questionCount].display();
     };

@@ -1,5 +1,5 @@
 const initializeVariables = () => {
-    queCount = 0;
+    questionCount = 0;
     questionsDisplayed = 0;
     timerDuration = 10;
     timerId = undefined;
