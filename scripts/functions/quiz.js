@@ -50,8 +50,8 @@ const quiz = (questions ) => {
     
     //Next button
     const nextQuestion = () => {
-        // console.log("Next Questions questionCount",questionCount);
-        // console.log("Next Question questionDisplayed",questionsDisplayed);
+        console.log("Next Questions questionCount",questionCount);
+        console.log("Next Question questionDisplayed",questionsDisplayed);
         // console.log("question number",questions[questionCount].number);
         if (timerId) {
             clearInterval(timerId);
@@ -64,7 +64,7 @@ const quiz = (questions ) => {
             console.log("Next Question questionDisplayed",questionsDisplayed);
 
 
-            if (questionCount < 10) {
+            if (questionCount <= 10) {
                 questions[questionCount].display();
                 startTimer(timerDuration);
             } else {
@@ -103,22 +103,26 @@ const quiz = (questions ) => {
     }
     // Lorsque le temps s'est écoulé pour une question donnée.
     const handleTimeout = () => {
-        //Si l'utilisateur n'a pas séléctionné de réponse et
-        //S'il y a encore des questions à afficher, elle affiche la question suivante
-        if ((!questions[questionCount].userHasSelected)&&(questionCount < 10)) {
+        // Si l'utilisateur n'a pas sélectionné de réponse et
+        // s'il n'y a plus de questions à afficher, entre dans le "else"
+        if (!(questions[questionCount].userHasSelected) && (questionCount === 10)) {
+            console.log("else de handle time out");
+            console.log("questionCount du else de handle...",questionCount);
+            showResultBox();
+        } else {
+            // Si les deux conditions ne sont pas remplies, entre dans le "if"
             alert("Temps écoulé, pas de points.");
             questionCount++;
             questionsDisplayed++;
             updateProgressBar();
             questions[questionCount].display();
-            console.log("If handleTimeout questionCount",questionCount);
-            console.log("If handleTimeout questionDisplayed",questionsDisplayed);
-            //démarre une nouvelle minuterie.
+            console.log("If handleTimeout questionCount", questionCount);
+            console.log("If handleTimeout questionDisplayed", questionsDisplayed);
+            // Démarre une nouvelle minuterie.
             startTimer(timerDuration);
-        } else {
-            showResultBox();
         }
     }
+    
     
 
      // Show result card (handleTimeout(), nextQuestion())
