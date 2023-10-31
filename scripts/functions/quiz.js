@@ -64,7 +64,7 @@ const quiz = (questions ) => {
             console.log("Next Question questionDisplayed",questionsDisplayed);
 
 
-            if (questionCount <= 10) {
+            if (questionCount < 10) {
                 questions[questionCount].display();
                 startTimer(timerDuration);
             } else {
