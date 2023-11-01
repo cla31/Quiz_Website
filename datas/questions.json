@@ -55,7 +55,7 @@
     },
     {
         "number": 10,
-        "question": "I'm studying to be a doctor, ------. I want to help people.",
+        "question": "I'm studying to be a doctor, ------ I want to help people.",
         "options": ["althought", "but", "even", "because"],
         "solution": 4
     },
@@ -67,7 +67,7 @@
     },
     {
         "number": 12,
-        "question": "There are 60 ------ In a minute.",
+        "question": "There are 60 ------ in a minute.",
         "options": ["seconds", "months", "years", "hours"],
         "solution": 1
     },
@@ -139,7 +139,7 @@
     },
     {
         "number": 24,
-        "question": "Excuse me ------do I get to the library ?",
+        "question": "Excuse me, ------ do I get to the library ?",
         "options": ["Where", "How", "can", "Could"],
         "solution": 2
     },
@@ -218,8 +218,8 @@
     },
     {
         "number": 37,
-        "question": "------ under the table ?",
-        "options": ["What do you do", "do you", "you do", "are you doing"],
+        "question": "What ------ under the table ?",
+        "options": ["do you do", "do you", "you do", "are you doing"],
         "solution": 4
     },
     {
@@ -253,12 +253,6 @@
         "solution": 3
     },
     {
-        "number": 42,
-        "question": "My mother ---- by air.",
-        "options": ["never has travelled", "has never travel", "has never travelled", "is never travelled"],
-        "solution": 3
-    },
-    {
         "number": 43,
         "question": "a : Do you know Sarah ?  b : Yes, ------- a long time.",
         "options": ["I'm knowing her for", "I know her since", "I've known her for", "I've known her since"],
@@ -284,7 +278,7 @@
     },
     {
         "number": 47,
-        "question": "a : My bag is very heavy b: I -------. It for you.",
+        "question": "a : My bag is very heavy b: I ------- it for you.",
         "options": ["'m carrying", "'ll carry", "carry", "care"],
         "solution": 2
     },
@@ -308,13 +302,13 @@
     },
     {
         "number": 51,
-        "question": "I don't like weather, but Kate.",
+        "question": "I don't like weather, but Kate ------s.",
         "options": ["does", "doesn't like", "likes", "doesn't"],
         "solution": 1
     },
     {
         "number": 52,
-        "question": "a : I was late for work today b : Jonh was.",
+        "question": "a : I was late for work today b : Jonh was ------.",
         "options": ["too", "So John was", "So wasn't John", "So John"],
         "solution": 1
     },
@@ -362,7 +356,7 @@
     },
     {
         "number": 60,
-        "question": "The house is empty --------- lives there.",
+        "question": "The house is empty. --------- lives there.",
         "options": ["Somebody", "Nobody", "Anybody", "Anyone"],
         "solution": 2
     },
@@ -386,7 +380,7 @@
     },
     {
         "number": 64,
-        "question": "Is there -------- sugar in your coffee ?",
+        "question": "Is there -------- in your coffee ?",
         "options": ["enough sugar", "sugar enough", "too sugar", "always"],
         "solution": 1
     },
