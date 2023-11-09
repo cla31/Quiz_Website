@@ -144,9 +144,7 @@ const quiz = (questions ) => {
             } else {
                 scoreMessage = `and sorry 😐, You got only ${totalScore} out of 10`;
             }
-        }
-        
-      
+        }        
 
         scoreText.innerHTML = `<span>${scoreMessage}</span>`;
     }

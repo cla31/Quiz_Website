@@ -8,8 +8,6 @@ const main = async (pathJson) => {
             });
         // startFireworks();               
         quiz(questions)
-    
-
   
     } catch (erreur) {
         console.log(erreur);
